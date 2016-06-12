@@ -14,6 +14,7 @@
 #     See the License for the specific language governing permissions and
 #     limitations under the License.
 
+
 def summary(start=1, end=10):
     result = 0
     for i in range(start, end):
