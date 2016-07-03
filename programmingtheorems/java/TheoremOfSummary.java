@@ -16,11 +16,11 @@
 
 public class TheoremOfSummary {
 
-    public static int summary() {
-        return new TheoremOfSummary().summary(1, 10);
+    public int summary() {
+        return this.summary(1, 10);
     }
 
-    public static int summary(int start, int end) {
+    public int summary(int start, int end) {
         int sum = 0;
         for(int i = start; i <= end; i++) {
             sum += i;
@@ -29,7 +29,9 @@ public class TheoremOfSummary {
     }
 
     public static void main(String[] args) {
-        System.out.println(new TheoremOfSummary().summary());
+    	
+    	TheoremOfSummary tos = new TheoremOfSummary();
+        System.out.println(tos.summary());
     }
 
 }

@@ -16,7 +16,7 @@
 
 public class TheoremOfDecision {
 
-    public static Boolean decide_if_at_least_one(int[] mylist, int t) {
+    public Boolean decide_if_at_least_one(int[] mylist, int t) {
         for (int i : mylist) {
             if (i == t) {
                 return true;
@@ -25,7 +25,7 @@ public class TheoremOfDecision {
         return false;
     }
 
-    public static Boolean decide_if_all(int[] mylist, int t) {
+    public Boolean decide_if_all(int[] mylist, int t) {
         for (int i : mylist) {
             if (i != t) {
                 return false;
@@ -36,10 +36,11 @@ public class TheoremOfDecision {
 
     public static void main(String[] args) {
         int[] mylist = {1, 2, 3, 4, 5};
-        System.out.println(new TheoremOfDecision().decide_if_at_least_one(mylist, 8));
+        TheoremOfDecision tod = new TheoremOfDecision();
+        System.out.println(tod.decide_if_at_least_one(mylist, 8));
 
         int[] mylist2 = {2, 2, 3, 2, 2};
-        System.out.println(new TheoremOfDecision().decide_if_all(mylist2, 2));
+        System.out.println(tod.decide_if_all(mylist2, 2));
     }
 
 }
