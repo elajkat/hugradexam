@@ -15,15 +15,15 @@
 #     limitations under the License.
 
 
-def selection_brute(mylist, t):
-    for i, l in enumerate(mylist):
+def selection_brute(mlist, t):
+    for i, l in enumerate(mlist):
         if t == l:
             return i
-    return 0
+    return -1
 
 
-def selection_pythonic(mylist, t):
-    return mylist.index(t)
+def selection_pythonic(mlist, t):
+    return mlist.index(t)
 
 
 if __name__ == '__main__':
